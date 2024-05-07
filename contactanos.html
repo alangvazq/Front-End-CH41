@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+</head>
+<body>
+    <form action="" method="">
+    <fieldset>
+        
+        <div>
+            <h3>Datos personales</h3>
+            <label for="nombre">Ingresa tu nombre completo:</label>
+            <input type="text" name="nombre" id="nombre" required"><br>
+
+            <label for="email">Ingresa tu email:</label>
+            <input type="email" name="email" id="email" required placeholder="ejemplo@correo.com"><br>
+
+            <label for="telefono">Ingresa tu número de telefono con clave lada:</label>
+            <input type="tel" name="telefono" id="telefono" required><br>
+
+            <label for="edad">Ingresa tu fecha de nacimiento:</label>
+            <input type="date" name="edad" id="edad" required><br><br>
+
+            <input type="radio" name="Hombre">
+            <label for="Hombre">Hombre</label>
+            <!-- Selecciona solo una opción -->
+            <input type="radio" name="Hombre">
+            <label for="Hombre">Hombre_2</label>
+            <input type="radio" name="Mujer">
+            <label for="Mujer">Mujer</label>
+            <input type="radio" name="Genero">
+            <label for="Genero">Prefiero no decirlo</label>
+        </div>
+    <fieldset>
+        <div>
+            <h3>Documentos</h3>
+            <label for="ine">Agrega una captura de tu INE en formato pdf:</label>
+            <input type="file" name="ine" id="ine" required><br>
+
+            <label for="comprobante">Agrega una captura de tu comprobante de domicilio en formato pdf:</label>
+            <input type="file" name="comprobante" id="comprobante" required><br>
+        </div>
+    </fieldset> 
+    <fieldset>
+        <h3>¿Qué clases quieres tomar?</h3>
+        <select name="" id="">
+            <option value="1">Java</option>
+            <option value="2">MySQL</option>
+            <option value="3">JS</option>
+            <option value="4">React</option>
+        </select>
+
+        <label for=""></label>
+        <input list="Grado" name="Grado">
+        <datalist id="Grado">
+            <option value="Básico">
+            <option value="Intermedio">
+            <option value="Pro">
+        </datalist>
+    </fieldset>
+    
+    <label for="color">Elige un color:</label>
+    <input type="color" name="color" id="color">
+
+    <label for="fecha">Elige una fecha:</label>
+    <input type="datetime-local">
+
+    <label for="hora">Elige una hora:</label>
+    <input type="time">
+
+    <label for="numero">Barra de progreso:</label>
+    <progress value="50" min="1" max="100"></progress>
+
+    <label for="rango">Elige un rango:</label>
+    <input type="range" name="rango" id="rango">
+    </form>
+</fieldset>
+    
+<form action="#" method="get" class="form-example">
+    <div class="form-example">
+        <label for="name">Ingresa tu nickname:</label>
+        <input type="text" name="name" id="name" required>
+    </div>
+    <div class="form-example">
+        <label for="email">Ingresa tu correo de jugador</label>
+        <input type="email" name="email" id="email" required>
+    </div>
+    <div class="form-example">
+        <input type="submit" value="Registrarse">
+        <br>
+        <input type="reset" value="Borrar">
+    </div>
+</form>
+
+<h5>Preferencias de usuario</h5>
+<form action="">
+    <label for="notificacion">
+        <input type="checkbox" id="notificacion" name="notificacion">
+        Recibir notificaciones
+    </label><br>
+
+    <label for="recordatorios">
+        <input type="checkbox" id="recordatorios" name="recordatorios">
+        Recibir recordatorios
+    </label><br>
+
+    <label for="publicidad">
+        <input type="checkbox" id="publicidad" name="publicidad">
+        Recibir notificaciones
+    </label><br>
+
+    <button type="submit">Enviar</button>
+</form>
+</body>
+</html>
