@@ -1,0 +1,141 @@
+/* Cuando tiene un asterisco se refiere a un selector universal y va a afectar todos los elementos de la página*/
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{ /*90deg,
+    red,
+    orange,
+    yellow,
+    blue,
+    red asi se aplican al igual*/
+    /*90deg,
+        red 25px,
+        orange 5px,
+        yellow 50px,
+        blue 100px,
+        violet 200px*/
+    /*background: radial-gradient(100px, violet, green);*/
+   /* para la forma de elipse radial-gradient(100px 100px, violet, green)*/
+background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, violet 100%);
+}
+
+
+/*Selector de clase en html es class= al nombre y en css se manda a llamar atravez de un punto (.)*/
+.cards{
+    background-color: antiquewhite;
+    /*margin: 80px; esto agrega margen a los 4 lados por igual*/
+    margin: 25px 50px 75px 100px;
+    padding: 200px;
+    border: 3px solid blue ;
+    border-width: 80px 4px 50px 35px;
+   /* border-radius: 50px; para los 4 lados*/
+   border-radius: 50px 25px/ 35px 13px;
+
+
+
+
+}
+/*Selector de ID se manda a llamar por medio del simbolo de gato (#)*/
+#uno{
+    background-color: cadetblue;
+}
+/*Selectores descendientes*/
+#cuatro img{
+  width: 250px;
+  height: 500px;
+}
+/*hiperlink de pseudoclases :link :visited contenga el atributo href*/
+
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+
+.link:link{ /*revisar*/
+    color: crimson;
+}
+
+
+.visited:visited{
+    color: cyan;
+}
+/*User-action pseudo-clases :active,
+:focus*/
+
+
+.hover:hover{
+    color: azure;
+    background-color: coral;
+}
+/*pseudo-elementos  ::selection*/
+.msg::first-letter{
+    color: red;
+    font-size: 50px;
+}
+.msg::first-line{
+    background-color: cadetblue;
+}
+.msg::before{
+    content: "🧺";
+}
+.msg::after{
+    content: "👙🩱";
+}
+.msg {
+    /*Propiedades de la fuente*/
+    font-size:10px ; /*Tamaño de la letra*/
+    font-style: italic;
+    font-weight: bold;
+    /*font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;*/
+    text-align: center;
+    word-spacing:25px ;
+    letter-spacing: 5px;
+    text-transform: none;
+    text-decoration:none ;
+
+
+
+
+}
+
+
+.ini{
+    text-shadow: crimson 5px  2px 4px;
+    text-align: center;
+}
+ .uno{
+    width: 300px;
+    border:  1px solid #ccc;
+    border-radius: 8px;
+    margin: 20px;
+ }
+
+
+ .imagen{
+    width: 100%;
+ }
+
+
+ .uno button:hover{
+    background-color: crimson;
+    color: white;
+ }
+ .uno a:hover{
+    color: white;
+ }
+
+
+ .uno button{
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+
+ .uno a{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 20px;
+ }

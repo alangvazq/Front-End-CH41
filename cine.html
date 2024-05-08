@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="acerca.html">Acerca de mí</a>    
+        </nav>
+    </header>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MjQG-a7d41Q?si=qbDXejz5_Qf52cRl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Cine</h1>
+    <h2>Cartelera</h2>
+    <label for="search">Buscar:</label>
+    <input type="search" id="search" name="search" />
+    <!-- Agregar 5 nuevas etiquetas para un form -->
+    <fieldset>
+        <legend>Compra de boletos</legend>
+        <form action="">
+            <!-- abbr funciona abreviacion -->
+            <label for="nombre"><abbr title="required" aria-label="required">Nombre:</abbr></label>
+            <input type="text" name="nombre" id="nombre">
+            <br>
+            <label for="apellido">Apellido:</label>
+            <input type="text" name="apellido" id="apellido">
+            <br>
+            <label for="correo">Correo:</label>
+            <input type="email" name="correo" id="correo">
+            <br>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono">
+            <br>
+            <label for="tarjeta">Tarjeta:</label>
+            <input type="number" name="tarjeta" id="tarjeta">
+            <br>
+            
+            <label for="condicion">Condiciones:</label> <br>
+            <textarea name="condicion" id="condicion">
+                
+            </textarea> <br>
+            <input type="submit" value="Comprar">
+        </form>
+    </fieldset>
+</body>
+</html>
